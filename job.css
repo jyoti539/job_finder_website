@@ -1,0 +1,935 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: rgb(31, 27, 45);
+}
+
+.demo{
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    margin-right: 16px;
+    box-shadow: 0 .125rem .5rem -.25rem rgba(31,27,45,.12),0 .25rem 1rem rgba(31,27,45,.12)
+}
+
+.layers{
+    font-size: 17.6px;
+}
+
+.demo:hover .layers{
+    color: orangered;
+}
+
+/* css for header */
+
+header{
+    position: fixed;
+    background-color: rgb(31, 27, 45);
+    padding: 16px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header .start{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0px 99.600px;
+    padding: 0px 12px;
+}
+
+header .start .side_bar{
+    display: none;
+    color: hsla(0,0%,100%,.7);
+    font-size: 20px;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+header .start .side_bar:hover .bar{
+    color: white;
+    opacity: 1;
+}
+
+
+header .anchors{
+    display: flex;
+    margin-left: -228px;
+}
+.anchors{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.anchors .tapper .anchor_tag{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: hsla(0,0%,100%,.7);
+    padding: 11px 16px 11px 16px;
+}
+
+.anchors .tapper .anchor_tag:hover{
+    color: white;
+}
+
+.anchors .tapper .drop{
+    padding: 8px 5px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 43px;
+    border: 1px solid hsla(0,0%,100%,.7);
+    border-radius: 15px;
+    background-color: #1f1b2d;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.anchors .tapper .drop a{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 24px 6px 16px;
+    color: hsla(0,0%,100%,.7);
+    text-decoration: none;
+}
+.tapper .drop .anchor_divider{
+    border: 1px solid hsla(0,0%,100%,.7);
+    margin: 6px 16px;
+}
+
+.tapper:hover .drop{
+    opacity: 1;
+    visibility: visible;
+    color: white;
+    
+}
+
+.anchors .tapper .anchor_tag .layer{
+    margin-right: 8px;
+}
+
+.anchors .tapper .anchor_tag .down{
+    font-size: 9.6px;
+}
+
+.vr_line{
+    width: 1px;
+    height: 30px;
+    /* color: hsla(0,0%,100%,.15); */
+    background-color:hsla(0,0%,100%,.15);;
+    position: absolute;
+    content: '';
+    left: 119px;
+    top: -5px;
+
+}
+
+ /* ******************tapper1************************* */
+
+ .anchors .tapper1 .anchor_tag1{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: hsla(0,0%,100%,.7);
+    padding: 11px 16px 11px 16px;
+}
+
+.anchors .tapper1 .anchor_tag1:hover{
+    color: white;
+}
+
+.anchors .tapper1 .drop1{
+    padding: 8px 5px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 43px;
+    border-bottom: 1px hsla(0,0%,100%,.7);
+    background-color: #1f1b2d;
+    transition: all 0.3s ease-in-out;
+}
+
+.anchors .tapper1 .drop1 a{
+    display: block;
+    padding: 16px 6px;
+    color: hsla(0,0%,100%,.7);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 24px 6px 16px;
+}
+
+.tapper1:hover .drop1{
+    opacity: 1;
+    visibility: visible;
+    color: white;
+    border: 1px solid hsla(0,0%,100%,.7);
+    border-radius: 15px;
+    
+}
+
+/* ******************tapper2*************************  */
+
+.anchors .tapper2 .anchor_tag2{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: hsla(0,0%,100%,.7);
+    padding: 11px 16px 11px 16px;
+}
+
+.anchors .tapper2 .anchor_tag2:hover{
+    color: white;
+}
+
+.anchors .tapper2 .drop2{
+    padding: 8px 5px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 43px;
+    border-bottom: 1px hsla(0,0%,100%,.7);
+    background-color: #1f1b2d;
+    transition: all 0.3s ease-in-out;
+}
+
+.anchors .tapper2 .drop2 a{
+    display: block;
+    padding: 16px 6px;
+    color: hsla(0,0%,100%,.7);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 24px 6px 16px;
+}
+
+.tapper2:hover .drop2{
+    opacity: 1;
+    visibility: visible;
+    color: white;
+    border: 1px solid hsla(0,0%,100%,.7);
+    border-radius: 15px;
+    
+}
+
+/* ******************tapper3************************* */
+
+.anchors .tapper3 .anchor_tag3{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: hsla(0,0%,100%,.7);
+    padding: 11px 16px 11px 16px;
+}
+
+.anchors .tapper3 .anchor_tag3:hover{
+    color: white;
+}
+
+.anchors .tapper3 .drop3{
+    padding: 8px 5px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 43px;
+    border-bottom: 1px hsla(0,0%,100%,.7);
+    background-color: #1f1b2d;
+    transition: all 0.3s ease-in-out;
+}
+
+.anchors .tapper3 .drop3 a{
+    display: block;
+    padding: 16px 6px;
+    color: hsla(0,0%,100%,.7);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 24px 6px 16px;
+}
+
+.tapper3:hover .drop3{
+    opacity: 1;
+    visibility: visible;
+    color: white; 
+    border: 1px solid hsla(0,0%,100%,.7);
+    border-radius: 15px;
+}
+
+.anchors .tapper3 .drop3 .right{
+    font-size: 9.6px;
+} 
+
+.account_pages {
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.account .drop_down1{
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    width: 200px;
+    border:1px solid hsla(0,0%,100%,.7);
+    position: absolute;
+}
+
+.account:hover .drop_down1{
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    left: 190px;
+    border: 1px solid hsla(0,0%,100%,.7);
+    border-radius: 15px;
+}
+
+.share_resume .drop_down2{
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    width: 200px;
+    border: 1px solid hsla(0,0%,100%,.7);
+    border-radius: 15px;
+    position: absolute;
+}
+
+.share_resume:hover .drop_down2{
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    left: 190px;
+    border: 1px solid hsla(0,0%,100%,.7);
+    border-radius: 15px;
+
+}
+
+/* ******************tapper4************************* */
+
+.anchors .tapper4 .anchor_tag4{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: hsla(0,0%,100%,.7);
+    padding: 11px 16px 11px 16px;
+}
+
+.anchors .tapper4 .anchor_tag4:hover{
+    color: white;
+}
+
+.anchors .tapper4 .drop4{
+    padding: 8px 5px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 43px;
+    border-bottom: 1px hsla(0,0%,100%,.7);
+    background-color: #1f1b2d;
+    transition: all 0.3s ease-in-out;
+}
+
+.anchors .tapper4 .drop4 a{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100px;
+    padding: 6px 24px 6px 16px;
+    color: hsla(0,0%,100%,.7);
+    text-decoration: none;
+}
+
+.per4:hover .drop4{
+    opacity: 1;
+    visibility: visible;
+    color: white;
+    border: 1px solid hsla(0,0%,100%,.7);
+    border-radius: 15px;
+}
+
+/* *************************************button****************************** */
+
+header .start .clickers .sign_in{
+    background-color: rgb(31, 27, 45);
+    border: none;
+    color: hsla(0,0%,100%,.7);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 16px;
+}
+
+header .start .clickers .sign_in:hover{
+    color: white;
+}
+
+header .start .clickers .resume{
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: #fd5631;
+    margin-left: 8px;
+    padding: 9px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+header .start .clickers .resume:hover{
+    box-shadow: 0 0.25rem 0.25rem 0.125rem rgba(253,86,49,.1), 0 0.375rem 0.75rem -0.125rem rgba(253,86,49,.4);
+    color: white;
+}
+
+header .start .clickers .employee{
+    color: hsla(0,0%,100%,.7);
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 8px;
+    padding: 9px 16px;
+    text-decoration: none;
+}
+
+header .start .clickers .employee:hover{
+    color: white;
+}
+
+/* ******************************css for Container************************************** */
+
+.container{
+    background-color: rgb(31, 27, 45);
+    margin: 0px 99px;
+    padding: 20px 12px;
+}
+
+.container .data_cont{
+    margin: 0px -12px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.container .data_cont .data_box{
+    padding: 0px 12px;
+    width: 55%;
+}
+
+.container .data_cont .data_box h1{
+    color: white;
+    margin-top: 0px;
+    padding-right: 200px;
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.container .data_cont .data_box .text_primary{
+    color: #fd5631
+}
+
+
+.container .data_cont .data_box h2{
+    color: white;
+    margin-top: 0px;
+    font-size: 19.68px;
+    line-height: 1.4;
+
+}
+
+.container .data_cont .data_box .buttons button{
+    margin: 8px 0px 0px 8px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: rgba(93,60,242,.15);
+    color: rgb(190, 184, 184);
+    border: none;
+}
+
+.container .data_cont .data_box .buttons .tap{
+    margin: 8px 0px 0px 0px;
+    background-color: rgba(93,60,242,.15);
+    color: rgb(190, 184, 184);
+    border: none;
+}
+
+.container .data_cont .data_box .buttons button:hover{
+    background-color: white;
+    color: #fd5631;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.container .data_cont .big_img{
+    /* width: 45%; */
+    overflow: hidden;
+}
+
+.container .data_cont .big_img .image_career{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    height: 450px;
+    overflow: hidden;
+    /* object-fit: cover; */
+}
+
+.container .data_cont .big_img .big_img1{
+    width:100%;
+    height: 100%;
+}
+
+
+form{
+    border: 1px solid #efecf3;
+    border-color: hsla(0,0%,100%,.15);
+    background-color: hsla(0,0%,100%,.04);
+    padding: 8px 8px 8px 12px;
+    margin: 40px 0px 24px 0px;
+    box-shadow: 0 0.125rem 0.125rem -0.125rem rgba(31,27,45,.08), 0 0.25rem 0.75rem rgba(31,27,45,.08);
+    border-radius: 50px;
+}
+
+form .fill_it .input_data .data_input{
+    width: 300px;
+}
+
+form .fill_it .vr_line1{
+    width: 1px;
+    background-color: hsla(0,0%,100%,.15)
+}
+
+form .fill_it .input_data .data_input span .m_glass{
+    color: #fff;
+    opacity: 0.5;
+    margin: 2px 0px 0px 0px ;
+    padding: 13px 0px 13px 16px;
+}
+
+form .fill_it .input_data .data_input input{
+    font-size: 16px;
+    padding: 13px 20px 13px 12px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+form .fill_it .input_data .data_input input:focus-visible{
+    box-shadow: none;
+    outline: none;
+}
+
+form .fill_it .hor_line{
+    margin: 0px;
+}
+
+form .fill_it{
+    display: flex;
+    justify-content: space-between;
+}
+
+form .fill_it .place{
+    display: flex;
+}
+
+form .fill_it .place input{
+    font-size: 16px;    
+    background-color: transparent;
+    border: none;
+}
+
+form .fill_it .place .data_input1{
+    padding: 9px 17px;
+    width: 200px;
+}
+
+form .fill_it .place .data_input1 :hover .loc_dot{
+    color: white;
+    opacity: 1;
+}
+
+form .fill_it .place .data_input1 span .loc_dot{
+    color: white;
+    opacity: 0.5;
+}
+
+form .fill_it .place .data_input1 input{
+    color: white;
+    width: 70px;
+}
+
+form .fill_it .place .distance{
+    padding: 9px 17px;
+    width: 200px;
+}
+
+form .fill_it .place .distance input{
+    color: white;
+    width: 70px;
+}
+
+form .fill_it .place .distance span .space{
+    color: white;
+    opacity: 0.5;
+}
+
+form .fill_it .place input:focus-visible{
+    box-shadow: none;
+    outline: none;
+}
+
+form .fill_it .money{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form .fill_it .money .paisa{
+    color: white;
+    opacity: 0.6;
+    background: transparent;
+}
+
+form .fill_it .money .searching{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fd5631;
+    padding: 13px 28px;
+    border-radius: 40px;
+    border: none;
+}
+
+form .fill_it .money .searching:hover{
+    box-shadow: 0 0.25rem 0.25rem 0.125rem rgba(253,86,49,.1), 0 0.375rem 0.75rem -0.125rem rgba(253,86,49,.4);
+    color: white;
+}
+
+.data_set{
+    background-color: white;
+    padding-top: 16px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.data_set .data_career{
+    margin: 0px 99px 48px 99px;
+    padding: 48px 12px 8px 12px;
+}
+
+.data_set .data_career .unorder{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.data_set .data_career .unorder .unordered_list{
+    list-style: none;
+    padding: 8px 15px 8px 6px;
+    background-color: wheat;
+    border-radius: 50px;
+    width: 143px;
+    
+}
+
+.data_set .data_career .unorder .unordered_list .accounts{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+
+.data_set .data_career .unorder .unordered_list .accounts:hover .bill{
+    background-color: #fd5631;
+    color: white;
+}
+
+.data_set .data_career .unorder .unordered_list .accounts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data_set .data_career .unorder .unordered_list .accounts span{
+    margin-right: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+.data_set .data_career .unorder .unordered_list .accounts .bill{
+    background-color: white;
+    color: #fd5631;
+    font-size: 25px;
+    font-weight: 400;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* ***************************************recent jobs for you**************************************************** */
+
+.lets_work{
+    margin: 0px 99px 48px 99px;
+    display: flex;
+}
+
+.lets_work .find_job{
+    display: flex;
+    width: 50%;
+}
+
+.lets_work .find_job .image_bag{
+    padding: 48px;
+}
+
+.lets_work .find_job .image_bag .image_voice{
+    width: 86px;
+    height: 86px;
+}
+
+.lets_work .find_job .paras{
+    padding: 20px;
+}
+
+.lets_work .find_job .paras p{
+    color: #666276;
+}
+
+.lets_work .find_job .paras .mr_orange{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fd5631;
+}
+
+/* *********************************************big boxes of link tags******************************** */
+
+.bowl{
+    margin: 0px 99px 48px 99px;
+    display: flex;   
+    justify-content: space-around;      
+}
+
+.bowl .data_howl{
+    padding: 0px 12px;
+    margin-top: 16px;
+    width: 45%;
+}
+
+.bowl .data_howl .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bowl .data_howl .heading a{
+    text-decoration: none;
+    color: #666276
+}
+
+.bowl .data_howl .heading a .long_arrow{
+    margin: -3px 0px 0px 8px;
+}
+
+.bowl .data_howl .box_full{
+    padding: 20px;
+    background-color: rgb(245, 244, 248);
+    border: 1px solid #efecf3;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    cursor: pointer;                 
+}
+
+.bowl .data_howl .box_full h3{
+    margin-bottom: 0px;
+}
+
+.bowl .data_howl .box_full .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;                      
+}
+
+.bowl .data_howl .box_full .box .box1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bowl .data_howl .box_full .box .box1 img{
+    width: 24px;
+    height: 24px;
+}
+
+.bowl .data_howl .box_full .box .box1 span{
+    color: #1f1b2d;
+    opacity: 0.8;
+    font-size: 14px;
+    margin-left: 8px;
+    padding-left: 4px;
+}
+
+.bowl .data_howl .box_full .box .pink{
+    background-color: rgba(242,60,73,.1);
+    color: #f23c49;
+    padding: 6.125px 10.500px;
+    border-radius: 50rem;
+}
+
+.bowl .data_howl .box_full .box .purple{
+    color: #5d3cf2;
+    background-color: rgba(93,60,242,.1); 
+    padding: 6.125px 10.500px;   
+    border-radius: 50rem;
+}
+
+.bowl .data_howl1{
+    padding: 0px 12px;
+    margin-top: 16px;
+    width: 45%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bowl .data_howl1 .bold_text{
+    text-align: left;
+}
+
+.bowl .data_howl1 .text_sec{
+    text-align: left;
+}
+
+.bowl .data_howl1 .res_ume{
+    text-align: left;
+}
+
+
+
+
+
+
+
+/* ************************************************Making this website responsive********************************************************** */
+
+@media (min-width:1400px){
+    header .start .anchors {
+        display: flex;
+        margin-left: -120px;
+    }
+}
+
+/* ****************************************************for1200px***************************************************************** */
+
+@media (max-width:1200px){
+    header .start .side_bar{
+        display: block;
+    }
+
+    header .start .side_bar .bar{
+        font-size: 30px;
+    }
+
+    header .start{
+        margin: 0px 40px;
+    }
+
+    header .start .icon .logo{
+        width: 150px;
+    }
+
+    header .start .clickers{
+        display: none;
+    }
+
+    .container{
+        margin: 0px 40px;
+    }
+
+    .container .data_cont .data_box h1{
+        font-size: 52px;
+    }
+
+    .container .data_cont .data_box .buttons{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .container .data_cont .data_box .buttons button{
+        margin: 8px 0px 0px 0px;
+    } 
+
+    .container .data_cont .big_img .image_career{
+        width: 450px;
+    }
+
+    header .anchors{
+        display: none;
+    }
+
+    form .fill_it .money .paisa{
+        margin-left: 15px;
+    }
+}
+
+/* ******************************************************for1000px******************************************************** */
+
+@media (max-width:1000px){
+    .container .data_cont .data_box h1{
+        font-size: 45px;
+        padding-right: 120px;
+    }
+
+    .container .data_cont .big_img .image_career{
+        width: 400px;
+    }
+
+    form{
+        border-radius: 20px;
+    }
+
+    form .fill_it{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    form .fill_it .input_data{
+        width: 30%;
+    }
+
+    form .fill_it .vr_line1{
+        height: 40px;
+    }
+
+    form .fill_it .money{
+        width: 100%;
+        margin: 20px 0px;
+        justify-content: space-between;
+    }
+
+    form .fill_it .money .searching{
+        margin-right: 15px;
+    }
+}
